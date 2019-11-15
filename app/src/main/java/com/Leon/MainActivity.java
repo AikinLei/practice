@@ -13,6 +13,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.Leon.RetrofitPratice.R;
+import com.Leon.view.AnimatorActivity;
 import com.Leon.view.CustomerActivity;
 import com.Leon.view.ImageTextActivity;
 import com.Leon.view.PeiChartActivity;
@@ -42,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
         mClassBeanArrayList.add(new ClassBean(CoordinatorLayoutActivity.class, "CoordinatorLayoutActivity"));
         mClassBeanArrayList.add(new ClassBean(PeiChartActivity.class, "PeiChartActivity"));
         mClassBeanArrayList.add(new ClassBean(ImageTextActivity.class, "ImageTextActivity"));
+        mClassBeanArrayList.add(new ClassBean(AnimatorActivity.class, "AnimatorActivity"));
 
 
         mAdapter = new MyAdapter(mClassBeanArrayList, this);
