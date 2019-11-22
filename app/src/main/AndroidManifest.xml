@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.Leon.view.DrawableActivity"></activity>
+        <activity android:name=".RxjavaActivity"></activity>
+        <activity android:name="com.Leon.rxLifeTest.RxLifeTestActivity" />
+        <activity android:name="com.Leon.view.DrawableActivity" />
         <activity android:name="com.Leon.view.AnimatorActivity" />
         <activity android:name="com.Leon.view.ImageTextActivity" />
         <activity android:name="com.Leon.view.PeiChartActivity" />
