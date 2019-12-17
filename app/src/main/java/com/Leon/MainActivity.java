@@ -20,6 +20,7 @@ import com.Leon.view.ImageTextActivity;
 import com.Leon.view.PeiChartActivity;
 import com.Leon.view.coordinator.CoordinatorActivity;
 import com.Leon.view.coordinator.CoordinatorLayoutActivity;
+import com.Leon.view.swipe.SwipeDelActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -46,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
         mClassBeanArrayList.add(new ClassBean(ImageTextActivity.class, "ImageTextActivity"));
         mClassBeanArrayList.add(new ClassBean(AnimatorActivity.class, "AnimatorActivity"));
         mClassBeanArrayList.add(new ClassBean(DrawableActivity.class, "DrawableActivity"));
+        mClassBeanArrayList.add(new ClassBean(SwipeDelActivity.class, "SwipeDelActivity"));
 
 
         mAdapter = new MyAdapter(mClassBeanArrayList, this);
