@@ -8,7 +8,7 @@
     tools:context="com.Leon.view.swipe.SwipeDelActivity">
 
 
-    <com.Leon.view.swipe.SwipeMenueLayout
+    <com.Leon.view.swipe.SwipeMenuLayout
         android:layout_width="match_parent"
         android:layout_height="60dp">
 
@@ -18,13 +18,34 @@
             android:layout_height="match_parent"
             android:background="#ccc"
             android:gravity="center"
-            android:text="这是内容" />
+            android:text="这是内容 ONE ONE ONE " />
 
 
         <Button
-            android:background="#fcc"
             android:layout_width="100dp"
             android:layout_height="match_parent"
+            android:background="#fcc"
             android:text="Delete" />
-    </com.Leon.view.swipe.SwipeMenueLayout>
+    </com.Leon.view.swipe.SwipeMenuLayout>
+
+    <com.Leon.view.swipe.SwipeMenuLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ccc"
+            android:gravity="center"
+            android:text="这是内容 TWO TWO TWO" />
+
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="#fcc"
+            android:text="Delete" />
+    </com.Leon.view.swipe.SwipeMenuLayout>
 </LinearLayout>

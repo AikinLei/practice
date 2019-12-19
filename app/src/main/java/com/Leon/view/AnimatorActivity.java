@@ -1,6 +1,5 @@
 package com.Leon.view;
 
-import android.animation.ObjectAnimator;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -17,9 +16,9 @@ public class AnimatorActivity extends AppCompatActivity {
 
 
 
-        ObjectAnimator objectAnimator = ObjectAnimator.ofFloat(circleView, "mRadius",  UiUtil.dp2px(300));
-        objectAnimator.setStartDelay(2000);
-        objectAnimator.start();
+//        ObjectAnimator objectAnimator = ObjectAnimator.ofFloat(circleView, "mRadius",  UiUtil.dp2px(300));
+//        objectAnimator.setStartDelay(2000);
+//        objectAnimator.start();
 
     }
 }

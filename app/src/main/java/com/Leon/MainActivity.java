@@ -13,6 +13,8 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.Leon.RetrofitPratice.R;
+import com.Leon.RetrofitPratice.RxjavaActivity;
+import com.Leon.threadTest.ThreadTestActivity;
 import com.Leon.view.AnimatorActivity;
 import com.Leon.view.CustomerActivity;
 import com.Leon.view.DrawableActivity;
@@ -48,6 +50,10 @@ public class MainActivity extends AppCompatActivity {
         mClassBeanArrayList.add(new ClassBean(AnimatorActivity.class, "AnimatorActivity"));
         mClassBeanArrayList.add(new ClassBean(DrawableActivity.class, "DrawableActivity"));
         mClassBeanArrayList.add(new ClassBean(SwipeDelActivity.class, "SwipeDelActivity"));
+        mClassBeanArrayList.add(new ClassBean(RxjavaActivity.class, "RxjavaActivity"));
+        mClassBeanArrayList.add(new ClassBean(ThreadTestActivity.class, "ThreadTestActivity"));
+
+
 
 
         mAdapter = new MyAdapter(mClassBeanArrayList, this);

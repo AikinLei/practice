@@ -6,6 +6,7 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 
 /**
@@ -36,6 +37,7 @@ public class CircleView extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
+        canvas.drawColor(Color.parseColor("#FFcccc"));
         canvas.drawCircle(getWidth() / 2, getHeight() / 2, mRadius, mPaint);
     }
 
@@ -46,5 +48,17 @@ public class CircleView extends View {
 
     public float getMRadius() {
         return this.mRadius;
+    }
+
+
+    @Override
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+
+        int measuredWidth = getMeasuredWidth();
+        int measuredHeight = getMeasuredHeight();
+        int size=Math.min(measuredWidth,measuredHeight);
+        Log.i("CircleView", "onMeasure: "+size);
+        setMeasuredDimension(size,size);
     }
 }

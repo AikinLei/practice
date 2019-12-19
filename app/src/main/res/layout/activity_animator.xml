@@ -9,8 +9,76 @@
 
 
     <com.Leon.view.CircleView
+        android:visibility="gone"
         android:id="@+id/circle_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
+
+    <com.Leon.view.TabLayout
+        android:background="#ccc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:padding="10dp"
+            android:background="#fcc"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:text="大立科技了高科技 11"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:padding="10dp"
+            android:background="#fcc"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:text="今天天气还不错  22"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:padding="10dp"
+            android:background="#fcc"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:text="大立科技了发生了大姐夫高ffff科技  33"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:padding="10dp"
+            android:background="#fcc"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:text="大立科的看                     技了高dfssfsdfa科技 44"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:padding="10dp"
+            android:background="#fcc"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:text="大立 55"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:padding="10dp"
+            android:background="#fcc"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:text="大立科技了高科技 大立科技了高科技大立科技了高科技大立科技了高科技大立科技了高科技大立科技了高科技大立科技了高科技大立科技了高科技大立科技了高科技大立科技了高科技大立科技了高科技大立科技了高科技大立科技了高科技大立科技了高科技大立科技了高科技大立科技了高科技 66"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+    </com.Leon.view.TabLayout>
+
+    <com.Leon.view.DeletedEditView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 </LinearLayout>
