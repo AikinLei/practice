@@ -9,10 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.Leon.view.swipe.SwipeDelActivity"></activity>
+        <activity android:name="com.Leon.view.VerticalSwipeActivity"></activity>
+        <activity android:name="com.Leon.view.swipe.SwipeDelActivity" />
         <activity android:name=".RxjavaActivity" />
-        <activity android:name="com.Leon.threadTest.ThreadTestActivity"></activity>
-        <activity android:name=".RxjavaActivity" />
+        <activity android:name="com.Leon.threadTest.ThreadTestActivity" />
         <activity android:name="com.Leon.rxLifeTest.RxLifeTestActivity" />
         <activity android:name="com.Leon.view.DrawableActivity" />
         <activity android:name="com.Leon.view.AnimatorActivity" />

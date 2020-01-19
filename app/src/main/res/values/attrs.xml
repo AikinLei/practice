@@ -7,4 +7,13 @@
         <attr name="leftSwipe" format="boolean" />
     </declare-styleable>
 
+    <declare-styleable name="SlideUpLayout">
+        <attr name="showPercent" format="float"/>
+        <attr name="showHeight" format="dimension"/>
+        <attr name="topMargin" format="dimension"/>
+        <attr name="separatePercent" format="float"/>
+        <attr name="childDraggable" format="boolean"/>
+    </declare-styleable>
+
+
 </resources>

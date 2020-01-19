@@ -1,4 +1,4 @@
-package com.Leon;
+package com.Leon.view;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -12,15 +12,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.Leon.ClassBean;
+import com.Leon.MainActivity;
 import com.Leon.RetrofitPratice.R;
 import com.Leon.RetrofitPratice.RxjavaActivity;
 import com.Leon.threadTest.ThreadTestActivity;
-import com.Leon.view.AnimatorActivity;
-import com.Leon.view.CustomerActivity;
-import com.Leon.view.DrawableActivity;
-import com.Leon.view.ImageTextActivity;
-import com.Leon.view.PeiChartActivity;
-import com.Leon.view.VerticalSwipeActivity;
 import com.Leon.view.coordinator.CoordinatorActivity;
 import com.Leon.view.coordinator.CoordinatorLayoutActivity;
 import com.Leon.view.swipe.SwipeDelActivity;
@@ -28,19 +24,18 @@ import com.Leon.view.swipe.SwipeDelActivity;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class VerticalSwipeActivity extends AppCompatActivity {
 
     private RecyclerView mRecyclerView;
-    private ArrayList<ClassBean> mClassBeanArrayList = new ArrayList<>();
     private MyAdapter mAdapter;
+    private ArrayList<ClassBean> mClassBeanArrayList = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        setContentView(R.layout.activity_vertical_swipe);
 
-        mRecyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
+        mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
 
 
         mClassBeanArrayList.add(new ClassBean(CustomerActivity.class, "CustomerActivity"));
@@ -56,6 +51,19 @@ public class MainActivity extends AppCompatActivity {
         mClassBeanArrayList.add(new ClassBean(VerticalSwipeActivity.class, "VerticalSwipeActivity"));
 
 
+        mClassBeanArrayList.add(new ClassBean(CustomerActivity.class, "CustomerActivity"));
+        mClassBeanArrayList.add(new ClassBean(CoordinatorActivity.class, "CoordinatorActivity"));
+        mClassBeanArrayList.add(new ClassBean(CoordinatorLayoutActivity.class, "CoordinatorLayoutActivity"));
+        mClassBeanArrayList.add(new ClassBean(PeiChartActivity.class, "PeiChartActivity"));
+        mClassBeanArrayList.add(new ClassBean(ImageTextActivity.class, "ImageTextActivity"));
+        mClassBeanArrayList.add(new ClassBean(AnimatorActivity.class, "AnimatorActivity"));
+        mClassBeanArrayList.add(new ClassBean(DrawableActivity.class, "DrawableActivity"));
+        mClassBeanArrayList.add(new ClassBean(SwipeDelActivity.class, "SwipeDelActivity"));
+        mClassBeanArrayList.add(new ClassBean(RxjavaActivity.class, "RxjavaActivity"));
+        mClassBeanArrayList.add(new ClassBean(ThreadTestActivity.class, "ThreadTestActivity"));
+        mClassBeanArrayList.add(new ClassBean(VerticalSwipeActivity.class, "VerticalSwipeActivity"));
+
+        mRecyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
         mAdapter = new MyAdapter(mClassBeanArrayList, this);
         mRecyclerView.setAdapter(mAdapter);
         mAdapter.notifyDataSetChanged();
@@ -79,13 +87,13 @@ public class MainActivity extends AppCompatActivity {
 
             View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item_home_recycler, viewGroup, false);
 
-            return new MyViewHolder(view);
+            return new MyAdapter.MyViewHolder(view);
         }
 
         @Override
         public void onBindViewHolder(@NonNull RecyclerView.ViewHolder viewHolder, int i) {
             ClassBean classBean = mBeanList.get(i);
-            MyViewHolder myViewHolder = (MyViewHolder) viewHolder;
+            MyAdapter.MyViewHolder myViewHolder = (MyAdapter.MyViewHolder) viewHolder;
 
             myViewHolder.mTextView.setText(classBean.getTitle());
 
